@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaggle Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#datasets">Datasets</a></li>
+            <li><a href="#competitions">Competitions</a></li>
+            <li><a href="#kernels">Kernels</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="datasets">
+            <h1>Datasets</h1>
+            <form id="dataset-form">
+                <input type="file" id="dataset-upload">
+                <button>Upload Dataset</button>
+            </form>
+            <ul id="dataset-list"></ul>
+        </section>
+        <section id="competitions">
+            <h1>Competitions</h1>
+            <form id="competition-form">
+                <input type="text" id="competition-name" placeholder="Competition Name">
+                <button>Create Competition</button>
+            </form>
+            <ul id="competition-list"></ul>
+        </section>
+        <section id="kernels">
+            <h1>Kernels</h1>
+            <textarea id="kernel-editor"></textarea>
+            <button>Run Kernel</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
